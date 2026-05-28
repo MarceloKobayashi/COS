@@ -1,0 +1,25 @@
+O banco de dados desse sistema conta com apenas 3 tabelas: ordens_servicos, tmp_ordens_servicos e img_ordens_servicos.
+Tabelas:
+    ordens_servicos: Guardam as ordens de serviço propriamente ditas, ela é a tabela central do COS
+        - id_os - NUMBER - NOT NULL - identificador da os
+        - num_os - VARCHAR2(4000) - NOT NULL - número da OS, se não tiver 'Sem número' ou algo identificavel
+        - dat_solicitacao - DATE - NOT NULL - data que foi solicitada
+        - solicitante - VARCHAR2(20) - NOT NULL - quem fez a solicitação
+        - assunto - VARCHAR2(4000) - NOT NULL - descrição da os
+        - obs - VARCHAR2(4000) - observação sobre a os
+        - categoria - VARCHAR2(4000) - categoria que a os está
+        - setor - VARCHAR2(100) - de qual setor dentro da ASQUALOG a os pertence (SEQUALOG ou EGEPAVI)
+
+    img_ordens_servicos: Guardam as imagens relacionadas às ordens de serviço.
+        - num_img - NUMBER - NOT NULL - identificador da imagem
+        - fk_ordens_servicos - NUMBER - NOT NULL - chave estrangeira que aponta para uma OS
+        - arq - BLOB - NOT NULL - arquivo da foto
+        - filename - VARCHAR2(200) - NOT NULL - nome do arquivo da foto
+        - mimetype - VARCHAR2(200) - NOT NULL - extensão do arquivo da foto
+
+    tmp_ordens_servicos: Guardam temporariamente, enquanto a OS não foi criada, as fotos da OS
+        - num_img - NUMBER - NOT NULL - identificador da imagem
+        - cpf_solicitante - VARCHAR2(20) - NOT NULL - guarda o CPF do usuário, para depois relacionar com a OS
+        - arq - BLOB - NOT NULL - arquivo da foto
+        - filename - VARCHAR2(200) - NOT NULL - nome do arquivo da foto
+        - mimetype - VARCHAR2(200) - NOT NULL - extensão do arquivo da foto
