@@ -13,27 +13,6 @@
 
 ---
 
-## 🔎 Acesso Rápido
-
-| Item | Local |
-|------|-------|
-| Visão geral da documentação | [docs/README.md](../README.md) |
-| Ordens de Serviço | [docs/ordens_servicos/README.md](../ordens_servicos/README.md) |
-
----
-
-## 📖 Índice
-
-- [Visão Geral](#-visão-geral)
-- [O que são componentes compartilhados](#-o-que-são-componentes-compartilhados)
-- [Como funcionam no Oracle APEX](#-como-funcionam-no-oracle-apex)
-- [Principais elementos](#-principais-elementos)
-- [Boas práticas](#-boas-práticas)
-- [Estrutura da documentação](#-estrutura-da-documentação)
-- [Próximos passos](#-próximos-passos)
-
----
-
 ## 🎯 Visão Geral
 
 Em Oracle APEX, componentes compartilhados são objetos reutilizáveis definidos no nível da aplicação para evitar repetição e garantir consistência entre páginas. Eles concentram regras, aparência, navegação e comportamentos que precisam ser usados em mais de uma tela.
@@ -57,33 +36,9 @@ Esse modelo funciona bem para padronizar interfaces e regras de acesso, porque o
 
 ## 🧱 Principais elementos
 
-- Listas de navegação e menus.
-- Breadcrumbs para orientação do usuário.
-- LOVs e listas estáticas para campos e seleções.
-- Templates e temas visuais.
+- Itens e Processos do Aplicativo.
 - Autorizações e autenticações.
-- Condições reutilizáveis e utilitários de aplicação.
-
-## ✅ Boas práticas
-
-- Centralizar tudo o que for reutilizado em várias páginas.
-- Nomear componentes com padrão claro e descritivo.
-- Evitar duplicação de listas, LOVs e regras de autorização.
-- Revisar dependências antes de alterar um componente já usado em produção.
-- Documentar o propósito de cada componente para facilitar manutenção.
+- Breadcrumbs para orientação do usuário.
+- Arquivos utilizados pelo aplicativo.s
 
 ---
-
-## 🗂 Estrutura da documentação
-
-- **Documentação geral**: [docs/README.md](../README.md)
-- **Ordens de Serviço**: [docs/ordens_servicos/README.md](../ordens_servicos/README.md)
-
----
-
-## Próximos passos
-
-- Detalhar cada tipo de componente compartilhado utilizado na aplicação.
-- Incluir exemplos práticos de uso no COS.
-- Acrescentar capturas de tela quando houver definições visuais relevantes.
-
