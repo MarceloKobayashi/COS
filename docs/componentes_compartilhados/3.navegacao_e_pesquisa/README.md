@@ -15,9 +15,9 @@ Vou apresentar o que o sistema utiliza dessa parte. Já que eu utilizo um header
 ## 🧭 Breadcrumb
 
 - Landing Page
-- Ordens de Serviço
-    ├── Editar OS
-    ├── Gráficos
+- Ordens de Serviço<br>
+    ├── Editar OS<br>
+    ├── Gráficos<br>
     └── Registrar OS
 
 ---
