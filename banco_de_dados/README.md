@@ -10,8 +10,7 @@ Descrição: documentação das tabelas do banco de dados do COS.
 
 - [Visão Geral](#-visão-geral)
 - [Tabelas](#-tabelas)
-- [Estrutura](#-estrutura)
-- [Contribuir](#-contribuir)
+- [Modelagem física](#️-modelagem-física)
 
 ---
 
@@ -25,13 +24,15 @@ O banco de dados do COS conta com 3 tabelas principais: ordens_servicos, img_ord
 - [img_ordens_servicos](img_ordens_servicos/README.md) - imagens relacionadas às ordens de serviço
 - [tmp_ordens_servicos](tmp_ordens_servicos/README.md) - imagens temporárias antes da criação da OS
 
-## 🏗 Estrutura
+## 🗺️ Modelagem física
 
-Cada tabela possui sua própria pasta com README específico, seguindo o mesmo padrão de documentação adotado em [reservas](reservas/README.md).
+O diagrama físico do banco de dados mostra tabelas, chaves primárias e relacionamentos usados em produção. Utilize o diagrama para entender cardinalidades, dependências e caminhos de consulta.
 
-## 🙋 Contribuir
+<p align="center">
+  <img src="Modelo_Fisico.jpeg" alt="Diagrama físico do banco de dados" width="720" />
+</p>
 
-Ao adicionar uma nova tabela ou alterar uma existente, atualize este índice e mantenha a mesma organização dos demais READMEs da pasta.
+*Arquivo: `banco_de_dados/Modelo_Fisico.jpeg`.*
 
 ---
 
