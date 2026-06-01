@@ -57,7 +57,7 @@ Região que renderiza a lista de OS em ordem decrescente. A saída é um contain
 
 PL/SQL completo que gera a listagem (mantido integralmente):
 
-```plsql
+```sql
 DECLARE
     v_html CLOB := '';
     v_tem_registro  BOOLEAN := FALSE;
@@ -143,7 +143,7 @@ WHERE id_os = :P2_ID_OS;
 
 Região dinâmica de detalhes (PL/SQL mantido):
 
-```plsql
+```sql
 DECLARE
     v_num_os        ordens_servicos.num_os%TYPE;
     v_solicitante   ordens_servicos.solicitante%TYPE;
